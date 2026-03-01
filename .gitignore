@@ -2,17 +2,22 @@
 node_modules/
 backend/node_modules/
 frontend/node_modules/
+backend/frontend/node_modules/
 
 # Python
 venv/
 __pycache__/
 *.pyc
 
-# ML files (optional to hide)
+# ML model files (regenerate with train_model.py)
 *.pkl
 
-# Env
+# NSL-KDD dataset (large file — download via train_model.py)
+analyzer/KDDTrain+.txt
+
+# Environment
 .env
 
 # OS
 .DS_Store
+.gitkeep

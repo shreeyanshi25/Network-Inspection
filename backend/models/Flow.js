@@ -21,6 +21,12 @@ const FlowSchema = new mongoose.Schema({
     http_host: String,
     tls_sni: String,
 
+    // Geo-IP fields
+    src_country: { type: String, default: "Unknown" },
+    src_country_code: { type: String, default: "?" },
+    dst_country: { type: String, default: "Unknown" },
+    dst_country_code: { type: String, default: "?" },
+
     createdAt: { type: Date, default: Date.now }
 });
 
